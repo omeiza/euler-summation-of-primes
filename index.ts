@@ -4,8 +4,8 @@
  * Find the sum of all the primes below two million.
  */
 
-function sumOfPrimes(limit: number): number {
-	function isPrime(input: number): boolean {
+const sumOfPrimes = (limit: number): number => {
+	const isPrime = (input: number): boolean => {
 		for (let i = 2; i < input; i++) {
 			if (input % i === 0) return false;
 		}
@@ -21,4 +21,4 @@ function sumOfPrimes(limit: number): number {
 	return primeSum;
 }
 
-console.log(sumOfPrimes(2000000));
+export default sumOfPrimes;
